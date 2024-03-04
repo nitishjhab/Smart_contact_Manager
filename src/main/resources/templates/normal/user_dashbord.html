@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<section>
+		<div class="cotaiiner text-center">
+			<div class="card">
+				<div class="crad-body">
+					<img class="mt-2"
+						style="height: 200px; width: 200px; object-fit: cover; border-radius: 50%;"
+						src="" th:src="@{'/img/contact.png'}" alt="" />
+				     <h1 class="text-center mr-4 mt-4 text-secondary font-italic font-weight-light">Start Adding Your Contact on Colud</h1>
+				    <a th:href="@{/users/add-contact}" class="btn btn-primary btn-block text-uppercase mt-3 ">Add new Contact</a>
+				
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
